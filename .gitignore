@@ -113,3 +113,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Compiled images
+.jpg
+.png
+.svg
