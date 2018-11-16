@@ -12,6 +12,10 @@ def preprocess_file():
     with open("poverty-incidence-per-region-psa.csv", "r") as csv_file:
         csv_reader = csv.reader(csv_file)
         header = csv_reader.__next__()
+
+        for i in range(len(header)):
+            header[i] = "'{}'".format(header[i])
+
         for row in csv_reader:
             if row[0] == data_names[0]:
                 data_poverty_incidence.append(list(row))
@@ -31,12 +35,11 @@ def preprocess_file():
             csv_writer.writerow(row)
 
 def generate_bar_chart_poverty():
-    sns.set_style("dark")
-    f, ax = plt.subplots(figsize=(6, 30))
-    
     poverty = pd.read_csv("finished/poverty-incidence-processed.csv")
-    sns.barplot(x="2015", y="Location", data=poverty,
-            label="Poverty incidence per population", color="b")
+
+    sns.set_style("darkgrid")
+    f, ax = plt.subplots(figsize=(6, 30))
+    sns.barplot(x="'2015'", y="'Location'", data=poverty, label="Poverty incidence per population", color="b")
     plt.tight_layout()
     plt.savefig("finished/poverty-incidence.png")
 
