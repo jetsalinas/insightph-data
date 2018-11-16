@@ -32,12 +32,15 @@ def preprocess_file():
 
 def generate_bar_chart_poverty():
     sns.set_style("dark")
-    f, ax = plt.subplots(figsize=(6, 15))
+    f, ax = plt.subplots(figsize=(6, 30))
     
-    poverty = pd.read_csv("finished/poverty-incidence-per-region-processed.csv")
-
+    poverty = pd.read_csv("finished/poverty-incidence-processed.csv")
+    sns.barplot(x="2015", y="Location", data=poverty,
+            label="Poverty incidence per population", color="b")
+    plt.tight_layout()
+    plt.savefig("finished/poverty-incidence.png")
 
 if __name__ == "__main__":
-    preprocess_file()
-    #generate_bar_chart_poverty
+    # preprocess_file()
+    generate_bar_chart_poverty()
     pass
