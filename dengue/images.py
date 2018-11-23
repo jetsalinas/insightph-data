@@ -1,9 +1,12 @@
 import seaborn as sns
 import pandas as pd
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import geopandas as gpd
 
 def generate_heatmap_dengue(year):
+    mpl.style.use("seaborn")
+
     dengue_long = pd.read_csv("denguecases.csv")
     dengue_long = dengue_long.loc[dengue_long.Year == year]
     dengue_long.Month = pd.to_datetime(dengue_long.Month, format='%b', errors='coerce').dt.month
@@ -24,8 +27,11 @@ def generate_heatmap_dengue(year):
     plt.xlabel("Region")
     plt.ylabel("Month")
     plt.savefig("finished/heatmap/dengue-{}.png".format(year))
+    plt.close()
 
 def generate_cloropleth_dengue(year):
+    mpl.style.use("seaborn")
+    
     dengue = pd.read_csv("denguecases.csv")
 
     dengue = pd.read_csv("denguecases.csv")
@@ -47,13 +53,14 @@ def generate_cloropleth_dengue(year):
 
     for i in range(len(months)):
         map_plot_month = gpd.GeoDataFrame(map_plot.loc[map_plot.Month == months[i]])
-        ax = map_plot_month.plot(figsize=(10, 10), alpha=0.5, cmap="inferno", column="Dengue_Cases", legend=True, vmin=0, vmax=80)
+        ax = map_plot_month.plot(figsize=(10, 10), alpha=0.5, cmap="gist_heat", column="Dengue_Cases", legend=True, vmin=0, vmax=80)
         plt.title("Dengue cases per 100,000 population in the Philippines ({} {})".format(months[i], year))
         plt.axis("off")
         plt.savefig("finished/geo/dengue-{}-{}.png".format(year, i))
         plt.close()
 
 if __name__ == "__main__":
-    for i in range(2015, 2017):
-        # generate_heatmap_dengue(i)
+    for i in range(2008, 2017):
+        generate_heatmap_dengue(i)
         generate_cloropleth_dengue(i)
+        print("Finished {} iteration(s)".format(i))
