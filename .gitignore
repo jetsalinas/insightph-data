@@ -126,3 +126,6 @@ sandbox/
 
 #geojson files
 **.geojson
+**.json
+**.shp
+**.shx
