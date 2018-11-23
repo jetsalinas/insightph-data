@@ -1,0 +1,3 @@
+ph-regions.geojson,http://openstat.psa.gov.ph/dataset/resource/4555c965-fbb0-43cb-9a80-04b5154b7e62
+ph-provinces.shx,https://github.com/macoymejia/geojsonph/blob/master/Province/Provinces.shx
+ph-provinces.shp,https://github.com/macoymejia/geojsonph/blob/master/Province/Provinces.shp
