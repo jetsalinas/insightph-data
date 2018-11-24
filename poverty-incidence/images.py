@@ -8,7 +8,7 @@ def generate_bar_chart_poverty():
 
     sns.set_style("darkgrid")
     f, ax = plt.subplots(figsize=(6, 30))
-    sns.barplot(x="'2015'", y="'Location'", data=poverty, label="Poverty incidence per population", color="b")
+    sns.barplot(x="'2015'", y="'Location'", data=poverty, label="Poverty incidence per population")
     plt.tight_layout()
     plt.savefig("finished/poverty-incidence.png")
 
@@ -39,7 +39,7 @@ def generate_cloropleth_poverty(year):
     
     # plot and save image
     map_plot = gpd.GeoDataFrame(poverty_provinces)
-    ax = map_plot.plot(figsize=(10, 10), alpha=0.5, cmap="Oranges", column="poverty_incidence", legend=True, vmin=0, vmax=80)
+    ax = map_plot.plot(figsize=(10, 10), alpha=0.5, cmap="gist_heat", column="poverty_incidence", legend=True, vmin=0, vmax=80)
     plt.title("Poverty incidence in the Philippines per province({})".format(year))
     plt.axis("off")
     plt.savefig("finished/geo/poverty-{}.png".format(year))
