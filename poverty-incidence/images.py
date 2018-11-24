@@ -3,14 +3,14 @@ import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
 
-def generate_bar_chart_poverty():
+def generate_bar_chart_poverty(year):
     poverty = pd.read_csv("finished/poverty-incidence-processed.csv")
 
     sns.set_style("darkgrid")
     f, ax = plt.subplots(figsize=(6, 30))
-    sns.barplot(x="'2015'", y="'Location'", data=poverty, label="Poverty incidence per population")
+    sns.barplot(x="'{}'".format(year), y="'Location'", data=poverty, label="Poverty incidence per population")
     plt.tight_layout()
-    plt.savefig("finished/poverty-incidence.png")
+    plt.savefig("finished/bar/poverty-{}.png".format(year))
 
 def generate_cloropleth_poverty(year):
     # load datasets
@@ -46,8 +46,7 @@ def generate_cloropleth_poverty(year):
     plt.close()
 
 if __name__ == "__main__":
-    generate_bar_chart_poverty()
-    generate_cloropleth_poverty(2006)
-    generate_cloropleth_poverty(2009)
-    generate_cloropleth_poverty(2012)
-    generate_cloropleth_poverty(2015)
+    for i in range(2006, 2016, 3):
+        generate_bar_chart_poverty(i)
+        generate_cloropleth_poverty(i)
+    
