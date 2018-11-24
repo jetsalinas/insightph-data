@@ -2,9 +2,9 @@ Items,Location,Region,1991,2006,2009,2012,2015
 Poverty Incidence among Population,Philippines,Philippines,34.44988,26.56142,26.27106,25.23319,21.58971
 CV_Poverty Incidence among Population ,Philippines,Philippines,1.935427,1.86202,1.977604,2.145416,3.506905
 Magnitude of Poor Population,Philippines,Philippines,21749656.3,22643980.2,23300443.7,23745894.9,21927009.4
-Poverty Incidence among Population,NCR,NCR,7.10113,4.65816,3.61563,3.90751,3.9096
-CV_Poverty Incidence among Population ,NCR,NCR,8.736679,23.88858,15.65073,12.8947,14.7782
-Magnitude of Poor Population,NCR,NCR,626484.4,499873.5,403458.2,460831.2,494630.3
+Poverty Incidence among Population,Metropolitan Manila,Metropolitan Manila,7.10113,4.65816,3.61563,3.90751,3.9096
+CV_Poverty Incidence among Population ,Metropolitan Manila,Metropolitan Manila,8.736679,23.88858,15.65073,12.8947,14.7782
+Magnitude of Poor Population,Metropolitan Manila,Metropolitan Manila,626484.4,499873.5,403458.2,460831.2,494630.3
 Poverty Incidence among Population,1st District,NCR,7.10113,4.65816,3.61563,3.90751,3.9096
 CV_Poverty Incidence among Population ,1st District,NCR,8.736679,23.88858,15.65073,12.8947,14.7782
 Magnitude of Poor Population,1st District,NCR,626484.4,499873.5,403458.2,460831.2,494630.3
@@ -35,9 +35,9 @@ Magnitude of Poor Population,Ifugao,CAR,  ,47641.82,56194.25,79679.86,68320.59
 Poverty Incidence among Population,Kalinga,CAR,  ,47.29979,30.1453,26.7678,34.85958
 CV_Poverty Incidence among Population ,Kalinga,CAR,  ,15.06602,16.20379,28.98396,23.37681
 Magnitude of Poor Population,Kalinga,CAR,  ,85793.52,56660,53768.32,78584.52
-Poverty Incidence among Population,Mt. Province,CAR,  ,44.0654,52.15943,37.63485,38.96458
-CV_Poverty Incidence among Population ,Mt. Province,CAR,  ,22.83569,17.50249,25.38056,16.27929
-Magnitude of Poor Population,Mt. Province,CAR,  ,62930.79,74190.95,59186.17,63332.29
+Poverty Incidence among Population,Mountain Province,CAR,  ,44.0654,52.15943,37.63485,38.96458
+CV_Poverty Incidence among Population ,Mountain Province,CAR,  ,22.83569,17.50249,25.38056,16.27929
+Magnitude of Poor Population,Mountain Province,CAR,  ,62930.79,74190.95,59186.17,63332.29
 Poverty Incidence among Population,Region I,Region I,36.63259,25.94516,21.96907,18.46063,13.06633
 CV_Poverty Incidence among Population ,Region I,Region I,6.753739,6.845305,7.42377,8.059804,11.28282
 Magnitude of Poor Population,Region I,Region I,1298408,1165924,1005574,876649.7,671086.5
@@ -263,9 +263,9 @@ Magnitude of Poor Population,Region XII,Region XII,1216120,1410648,1511050,18958
 Poverty Incidence among Population,North Cotabato,Region XII,  ,31.38037,30.63965,52.35602,41.35423
 CV_Poverty Incidence among Population ,North Cotabato,Region XII,  ,12.95192,14.10157,9.056277,11.5155
 Magnitude of Poor Population,North Cotabato,Region XII,  ,331157.5,361554.3,708062.1,615922.6
-Poverty Incidence among Population,Saranggani,Region XII,  ,48.96422,57.72723,53.15033,55.20228
-CV_Poverty Incidence among Population ,Saranggani,Region XII,  ,8.951693,9.180867,8.661065,14.01591
-Magnitude of Poor Population,Saranggani,Region XII,  ,247674.1,290151.1,269111.6,233164.2
+Poverty Incidence among Population,Sarangani,Region XII,  ,48.96422,57.72723,53.15033,55.20228
+CV_Poverty Incidence among Population ,Sarangani,Region XII,  ,8.951693,9.180867,8.661065,14.01591
+Magnitude of Poor Population,Sarangani,Region XII,  ,247674.1,290151.1,269111.6,233164.2
 Poverty Incidence among Population,South Cotabato,Region XII,  ,31.73649,31.62345,31.98151,24.63877
 CV_Poverty Incidence among Population ,South Cotabato,Region XII,  ,9.611344,11.24331,13.9444,20.72817
 Magnitude of Poor Population,South Cotabato,Region XII,  ,394843.6,408124.6,430209.9,411404.1
@@ -284,12 +284,12 @@ Magnitude of Poor Population,Agusan del Norte,Region XII,  ,273427.1,290792.6,23
 Poverty Incidence among Population,Agusan del Sur,Region XII,  ,53.83707,60.03498,48.07851,47.28907
 CV_Poverty Incidence among Population ,Agusan del Sur,Region XII,  ,9.48093,7.377719,10.68022,10.83956
 Magnitude of Poor Population,Agusan del Sur,Region XII,  ,327984.4,398420.8,324596.9,318638.1
-Poverty Incidence among Population,Surigao Del Norte,Region XII,  ,52.69819,57.92961,41.84303,34.68322
-CV_Poverty Incidence among Population ,Surigao Del Norte,Region XII,  ,8.100962,6.202625,6.472727,14.02093
-Magnitude of Poor Population,Surigao Del Norte,Region XII,  ,283789.2,311979.3,248952.6,225180.6
-Poverty Incidence among Population,Surigao Del Sur,Region XII,  ,46.513,53.68654,36.00577,40.11199
-CV_Poverty Incidence among Population ,Surigao Del Sur,Region XII,  ,11.83593,7.094131,11.82774,10.58619
-Magnitude of Poor Population,Surigao Del Sur,Region XII,  ,247468.4,290490,197652.5,248344.7
+Poverty Incidence among Population,Surigao del Norte,Region XII,  ,52.69819,57.92961,41.84303,34.68322
+CV_Poverty Incidence among Population ,Surigao del Norte,Region XII,  ,8.100962,6.202625,6.472727,14.02093
+Magnitude of Poor Population,Surigao del Norte,Region XII,  ,283789.2,311979.3,248952.6,225180.6
+Poverty Incidence among Population,Surigao del Sur,Region XII,  ,46.513,53.68654,36.00577,40.11199
+CV_Poverty Incidence among Population ,Surigao del Sur,Region XII,  ,11.83593,7.094131,11.82774,10.58619
+Magnitude of Poor Population,Surigao del Sur,Region XII,  ,247468.4,290490,197652.5,248344.7
 Poverty Incidence among Population,ARMM,ARMM,30.4762,47.13538,47.44632,55.81916,53.69725
 CV_Poverty Incidence among Population ,ARMM,ARMM,12.55977,6.877747,7.10361,5.783081,7.57684
 Magnitude of Poor Population,ARMM,ARMM,631371.9,1450467,1507868,1854188,1990503
@@ -305,6 +305,6 @@ Magnitude of Poor Population,Maguindanao,ARMM,  ,471761.6,460209.3,571223.2,5516
 Poverty Incidence among Population,Sulu,ARMM,  ,40.70466,41.58893,45.82355,54.90648
 CV_Poverty Incidence among Population ,Sulu,ARMM,  ,15.09661,11.88664,11.22618,9.632729
 Magnitude of Poor Population,Sulu,ARMM,  ,280456.9,299785.3,358143.9,577987.3
-Poverty Incidence among Population,Tawitawi,ARMM,  ,52.41014,35.27656,28.61021,12.62076
-CV_Poverty Incidence among Population ,Tawitawi,ARMM,  ,16.89226,23.63708,20.80472,41.43997
-Magnitude of Poor Population,Tawitawi,ARMM,  ,221611.8,151220.3,126971.1,60554.96
+Poverty Incidence among Population,Tawi-Tawi,ARMM,  ,52.41014,35.27656,28.61021,12.62076
+CV_Poverty Incidence among Population ,Tawi-Tawi,ARMM,  ,16.89226,23.63708,20.80472,41.43997
+Magnitude of Poor Population,Tawi-Tawi,ARMM,  ,221611.8,151220.3,126971.1,60554.96
